@@ -3,6 +3,7 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import { Auth } from "@/pages/Auth/Auth";
 import { SignupCard } from "@/components/organisms/Auth/SignupCard";
 import { SigninCard } from "@/components/organisms/Auth/SigninCard";
+import { Notfound } from "./pages/Notfound/Notfound";
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
           </Auth>
         }
       />
-      <Route path="/" element={<Navigate to="/auth/signup" replace />} />
+      <Route path="/*" element={<Notfound />} />
     </Routes>
   );
 }

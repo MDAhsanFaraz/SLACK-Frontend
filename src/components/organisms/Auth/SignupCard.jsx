@@ -70,7 +70,7 @@ export const SignupCard = () => {
           ></Input>
           <Button>Continue</Button>
         </form>
-        <Separator className="my-5" />
+        <Separator className="my-5  bg-[#e7e3e7]" />
         <p className="text-s text-muted-foreground mt-4">
           Already have an account ?{" "}
           <span className="text-sky-600 hover:underline cursor-pointer">
